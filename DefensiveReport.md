@@ -57,7 +57,6 @@ Excessive HTTP Errors is implemented as follows:
   - **Threshold**: IS ABOVE 400
   - **Vulnerability Mitigated**: Enumeration
   - **Reliability**: The alert is highly reliable. Measuring by error codes 400 and above will filter out any normal or successful responses. 400+ codes are client and server errors which are of more concern. Especially when considering these error codes going off at a high rate. It detected our wpscan.
-  - ![alt text]
 
 
 #### HTTP Request Size Monitor
@@ -66,7 +65,6 @@ HTTP Request Size Monitor is implemented as follows:
   - **Threshold**: IS ABOVE 3500
   - **Vulnerability Mitigated**: Measurement of high traffic events; which could be an indicator of attack.
   - **Reliability**: This was highly reliable when John the Ripper was executed.
-  - ![alt text]
 
 
 #### CPU Usage Monitor
@@ -75,7 +73,6 @@ CPU Usage Monitor is implemented as follows:
   - **Threshold**:IS ABOVE 0.5
   - **Vulnerability Mitigated**: John the Ripper
   - **Reliability**: Low and unreliable; the cpu usage monitor triggered even when not attacked.
-  - ![alt text]
 
 
 ### Suggestions for Going Further
@@ -96,9 +93,7 @@ The logs and alerts generated during the assessment suggest that this network is
     - "Texas" 2-Step: Disable Scans and Block User Enumeration via .htcaccess
     - **Why It Works**: This 2 step process will add layers of security by:
     - Adding a code snippet to your theme's functions.php file:
-    - ![alt text]
     - Adding a code snippet to your site's root .htcaccess file (the file will need to be created if you don't originally have it setup)
-      - ![alt text]
 - Vulnerability 3: Weak wp-config.php security implementation
   - Mitigation Techniques:
   - Setting up proper file security permissions within user files [4] & Protect the wp-config.php file with .htcaccess file [6]
