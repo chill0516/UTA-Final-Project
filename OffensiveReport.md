@@ -50,6 +50,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - ssh michael@192.168.1.110
         - pw: michael
   - ![alt text](https://github.com/chill0516/UTA-Final-Project/blob/main/OffensiveReport/4.png)
+      - Using these commands
         - cd ../
         - cd /var/www/html
         - ls -l
