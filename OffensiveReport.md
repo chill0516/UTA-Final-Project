@@ -99,11 +99,11 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
           - Command:
             - john stevenhash.txt
             - john michaelhash.txt; the execution of performing the john the ripper kept on going; but we already had the password from the previous activity.
-            - [alt text](https://github.com/chill0516/UTA-Final-Project/blob/main/OffensiveReport/12.png)
           - Once Steven’s password hash was cracked, the next thing to do was SSH as Steven. Then as Steven checking for privilege and escalating to root with Python
           - Command:
             - ssh steven@192.168.1.110
             - pw:pink84
+            - [alt text](https://github.com/chill0516/UTA-Final-Project/blob/main/OffensiveReport/12.png)
             - sudo -l
             - sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’
             - cd /root
